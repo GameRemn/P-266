@@ -6,13 +6,7 @@ using UnityEngine.Events;
 public class ButtonDownAction : MonoBehaviour
 {
     public KeyCode kay;
-    
-    void OnEnable()
-    {
-        Cursor.lockState = CursorLockMode.None; 
-        Cursor.visible = true;
-    }
-    
+
     public UnityEvent unityEvent;
     private void Update()
     {
