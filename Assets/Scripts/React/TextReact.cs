@@ -17,6 +17,6 @@ public class TextReact : MonoBehaviour
     public void TextPrint()
     {
         text.text = textInfo;
-        GameModManager.gmm.GameMod = GameMod.Info;
+        GameModManager.gmm.GameMod = GameMod.Info; 
     }
 }

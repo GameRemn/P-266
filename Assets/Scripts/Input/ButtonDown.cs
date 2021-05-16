@@ -9,7 +9,7 @@ public class ButtonDown : MonoBehaviour
     public GameMod gameMod;
     void OnEnable()
     {
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.None; 
         Cursor.visible = true;
     }
 

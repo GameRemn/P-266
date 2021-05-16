@@ -20,16 +20,15 @@ public class CameraReact : MonoBehaviour
 
     public void CameraOn(Camera cameraOn)
     {
+        AllCamerasOff();
+        cameraOn.gameObject.SetActive(true);
+    }
+
+    public void AllCamerasOff()
+    {
         foreach (var camera in Camera.allCameras)
         {
-            if(camera == cameraOn)
-            {
-                camera.enabled = true;
-            }
-            else
-            {
-                camera.enabled = false;
-            }
+            camera.gameObject.SetActive(false);
         }
     }
 }

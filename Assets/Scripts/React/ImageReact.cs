@@ -7,7 +7,7 @@ public class ImageReact : MonoBehaviour
 {
     public ReactiveTarget reactiveTarget;
     public Sprite imageInfo;
-    public Image image;
+    public Image imageObj;
     void Start()
     {
         reactiveTarget.react.AddListener(ImageSelect);
@@ -15,7 +15,7 @@ public class ImageReact : MonoBehaviour
 
     public void ImageSelect()
     {
-        image.sprite = imageInfo;
+        imageObj.sprite = imageInfo;
         GameModManager.gmm.GameMod = GameMod.Info;
     }
 }

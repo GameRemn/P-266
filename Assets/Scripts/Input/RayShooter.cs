@@ -6,10 +6,9 @@ public class RayShooter : MonoBehaviour {
 
 	public float rayRange;
 
-	private Camera _camera;
+	public Camera _camera;
 
 	void OnEnable() {
-		_camera = GetComponent<Camera>();
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 	}
